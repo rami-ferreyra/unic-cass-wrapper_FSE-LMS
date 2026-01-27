@@ -15,7 +15,7 @@
     },
 
     "DESIGN_NAME": "user_project_wrapper",
-    "CLOCK_PERIOD": 20,
+    "CLOCK_PERIOD": 10,
     "CLOCK_PORT": "io_clock_PAD",
     "CLOCK_NET": "sg13g2_IOPad_io_clock/p2c",
     "VERILOG_FILES": [
@@ -122,18 +122,18 @@
         "bondpad_70x70"
     ],
 
-    "MACROS": {
+     "MACROS": {
             "fse_lms_wrapper": {
-                "gds": "dir::../unic_cass_wrapper_user_project/fse_lms_wrapper/final/gds/fse_lms_wrapper.gds",
+                "gds": "dir::../unic_cass_wrapper_user_project/unic-cass-wrapper_FSE-LMS/unic_cass_wrapper_user_project/fse_lms_wrapper/final/gds/fse_lms_wrapper.gds",
                 "lef": "dir::../unic_cass_wrapper_user_project/fse_lms_wrapper/final/lef/fse_lms_wrapper.lef",
-                "nl": "dir::../unic_cass_wrapper_user_project/fse_lms_wrapper/final/pnl/fse_lms_wrapper.pnl.v",
+                "nl": "dir::../unic-cass-wrapper_FSE-LMS/unic_cass_wrapper_user_project/fse_lms_wrapper/final/nl/fse_lms_wrapper.nl.v",
                 "lib": {
                     "nom_typ_1p20V_25C": "dir::../unic_cass_wrapper_user_project/fse_lms_wrapper/final/lib/nom_typ_1p20V_25C/fse_lms_wrapper__nom_typ_1p20V_25C.lib",
                     "nom_fast_1p32V_m40C": "dir::../unic_cass_wrapper_user_project/fse_lms_wrapper/final/lib/nom_fast_1p32V_m40C/fse_lms_wrapper__nom_fast_1p32V_m40C.lib",
                     "nom_slow_1p08V_125C": "dir::../unic_cass_wrapper_user_project/fse_lms_wrapper/final/lib/nom_slow_1p08V_125C/fse_lms_wrapper__nom_slow_1p08V_125C.lib"
                 },
                 "spef": {
-                    "nom_typ_1p20V_25C": "dir::../unic_cass_wrapper_user_project/fse_lms_wrapper/final/spef/nom/fse_lms_wrapper.nom.spef"
+                    "nom_typ_1p20V_25C": "dir:../unic_cass_wrapper_user_project/fse_lms_wrapper/final/spef/nom/fse_lms_wrapper.nom.spef"
                 },
                 "instances": {
                     "fse_lms_wrapper_inst": {

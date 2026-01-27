@@ -80,15 +80,15 @@ module user_project_wrapper (
     end
     endgenerate
 
-    user_project_example user_project_example_inst (
-        `ifdef USE_POWER_PINS
-        .VPWR   (VDD),
-        .VGND   (VSS),
-        `endif
-        .clk_i  (io_clock_p2c),
-        .rst_ni (io_reset_p2c),
-        .ui_PAD2CORE (ui_PAD2CORE),
-        .uo_CORE2PAD (uo_CORE2PAD)
+    fse_lms_wrapper fse_lms_wrapper_inst (
+	`ifdef USE_POWER_PINS
+		.VPWR   (VDD),
+		.VGND   (VSS),
+	`endif
+	.clk_i  (io_clock_p2c),
+	.rst_ni (io_reset_p2c),
+	.ui_PAD2CORE (ui_PAD2CORE),
+	.uo_CORE2PAD (uo_CORE2PAD)
     );
 
 endmodule

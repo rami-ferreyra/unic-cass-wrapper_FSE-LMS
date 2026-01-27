@@ -14,11 +14,11 @@
 # Defined in tb_top.v as:
 #   forever #10 clkA = ~clkA;
 # => Period = 10 ns (100 MHz)
-create_clock -name clkA -period 20 [get_ports clkA]
+create_clock -name clkA -period 20 [get_ports clk_i]
 
 # SPI clock (external, asynchronous)
 # Defined in tb_top.v ~20 MHz
-create_clock -name spi_sclk -period 100 [get_ports spi_sclk]
+create_clock -name spi_sclk -period 100 [get_ports ui_PAD2CORE[1]]
 
 
 ############################################################
