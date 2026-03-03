@@ -30,9 +30,10 @@
     "CORE_AREA": [20.16, 22.68, 529.84, 527.32],
 
     "VSRC_LOC_FILES": {
-        "VPWR": "dir::irdrop/vpwr.csv",
-        "VGND": "dir::irdrop/vgnd.csv"
+	    "VPWR": "dir::irdrop/vpwr.csv",
+	     "VGND": "dir::irdrop/vgnd.csv"
     },
 
     "RUN_IRDROP_REPORT": false
+
 }
